@@ -26,14 +26,10 @@ public class Tester {
 	public int [] sortArray(int[] numArray) {
 //		int [] sortedArray = numArray;
 		
-		int min = 0;
+		int min = numArray[0];
 		int hold;
 		
 		for(int i=0; i < numArray.length; i++) {
-			
-			if(numArray[i] > min) {
-				min = numArray[i];
-			}
 			
 			for(int j=i+1; j < numArray.length; j++) {
 				if(numArray[j] < min) {
